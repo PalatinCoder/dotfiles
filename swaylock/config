@@ -2,7 +2,7 @@ ignore-empty-password
 grace=300
 clock
 timestr=%H:%M
-indicator
+indicator-idle-visible
 indicator-radius=200
 indicator-thickness=10
 effect-blur=7x5
