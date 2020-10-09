@@ -213,7 +213,7 @@ bar {
 
 include /etc/sway/config.d/*
 
-exec swaylock --image ~/.config/sway/wallpaper.jpg
+exec swaylock --image ~/.config/sway/wallpaper.jpg --grace 0
 
 # GTK Settings
 set $gnome-schema org.gnome.desktop.interface
