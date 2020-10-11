@@ -1,0 +1,6 @@
+# GTK Settings
+set $gnome-schema org.gnome.desktop.interface
+
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'SolArc-Dark'
+}
