@@ -1,0 +1,12 @@
+# sway colors (solarized dark)
+#
+# class 		border 	background	text	indicator	child_border
+#				base03/base02	base0	blue		
+#
+client.focused 		#073642 #073642 	#839496 #268bd2
+client.focused_inactive	#002b36 #002b36 	#839496 #268bd2
+client.unfocused	#002b36 #002b36 	#839496 #268bd2
+
+# here for completeness but urgent is only supported for xwayland clients
+client.urgent		#002b36 #002b36 	#839496 #268bd2
+
