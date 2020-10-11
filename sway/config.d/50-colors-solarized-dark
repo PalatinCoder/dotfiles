@@ -1,12 +1,14 @@
 # sway colors (solarized dark)
+set	$sol_base03	#002b36
+set	$sol_base02	#073642
+set	$sol_base0	#839496
+set	$sol_blue	#268bd2
 #
-# class 		border 	background	text	indicator	child_border
-#				base03/base02	base0	blue		
-#
-client.focused 		#073642 #073642 	#839496 #268bd2
-client.focused_inactive	#002b36 #002b36 	#839496 #268bd2
-client.unfocused	#002b36 #002b36 	#839496 #268bd2
+# class 		border 		background	text		indicator	child_border
+client.focused 		$sol_base02 	$sol_base02	$sol_base0 	$sol_blue
+client.focused_inactive	$sol_base03 	$sol_base03	$sol_base0 	$sol_blue
+client.unfocused	$sol_base03 	$sol_base03	$sol_base0 	$sol_blue
 
 # here for completeness but urgent is only supported for xwayland clients
-client.urgent		#002b36 #002b36 	#839496 #268bd2
+client.urgent		$sol_base03 	$sol_base03	$sol_base0 	$sol_blue
 
