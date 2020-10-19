@@ -49,7 +49,10 @@ window#waybar {
 	color: @red;
 }
 
+#window,
 #clock,
+#idle_inhibitor,
+#workspaces,
 #pulseaudio,
 #battery,
 #mode {

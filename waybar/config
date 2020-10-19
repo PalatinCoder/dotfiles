@@ -26,7 +26,7 @@
 		"format": "{name}"
 	},
 	"clock": {
-		"format": "{:%x %H:%M}",
+		"format": " {:%x %H:%M}",
 		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
 	},
 	"idle_inhibitor": {
@@ -37,12 +37,10 @@
 		}
 	},
 	"pulseaudio": {
-		"format": "{volume}% {icon} {format_source}",
-		"format-bluetooth": "{volume}% {icon} {format_source}",
-		"format-bluetooth-muted": " {icon} {format_source}",
-		"format-muted": " {format_source}",
-		"format-source": "{volume}% ",
-		"format-source-muted": "",
+		"format": "{icon} {volume}%",
+		"format-bluetooth": " {icon} {volume}% ",
+		"format-bluetooth-muted": "{icon}  ",
+		"format-muted": "",
 		"format-icons": {
 			"headphone": "",
 			"hands-free": "",
