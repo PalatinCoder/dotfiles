@@ -6,7 +6,7 @@
     bindsym $mod+Return exec $term
 
     # Kill focused window
-    bindsym $mod+Shift+q kill
+    bindsym $mod+q kill
 
     # Start your launcher
     bindsym $mod+d exec $menu
@@ -18,11 +18,6 @@
     # mouse button for dragging.
     floating_modifier $mod normal
 
-    # Reload the configuration file
-    bindsym $mod+Shift+c reload
-
-    # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
 #
@@ -84,7 +79,6 @@
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
     bindsym $mod+w layout tabbed
     bindsym $mod+e layout toggle split
 
@@ -135,3 +129,27 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+
+#
+# System control
+#
+mode "system" {
+    # power
+    bindsym p exec swaymsg "mode 'default', exec 'systemctl poweroff'"
+    bindsym r exec swaymsg "mode 'default', exec 'systemctl reboot'"
+    bindsym s exec swaymsg "mode 'default', exec 'systemctl suspend'"
+
+    # session lock / logout
+    bindsym l exec swaymsg "mode 'default', exec 'loginctl lock-session'"
+
+    # Reload the configuration file
+    bindsym c exec swaymsg "mode 'default', reload"
+
+    # Exit sway (logs you out of your Wayland session)
+    bindsym e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+
+    # return to normal mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+s mode "system"
