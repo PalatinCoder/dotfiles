@@ -153,3 +153,8 @@ mode "system" {
     bindsym Escape mode "default"
 }
 bindsym $mod+s mode "system"
+
+#
+# Screenshots
+#
+bindsym Print exec swaymsg -t get_tree | jq -r '.. | select(.pid? and .visible?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | slurp -o | grim -g - - | swappy -f - -o $(xdg-user-dir PICTURES)/Screenshots/$(date +%Y-%m-%d-%H%M%S).png
