@@ -16,4 +16,4 @@ set $term alacritty
 set $menu wofi --show drun
 
 # Wallpaper
-set $wallpaper ~/.config/sway/wallpaper.jpg
+set $wallpaper $(xdg-user-dir PICTURES)/Wallpaper/active
