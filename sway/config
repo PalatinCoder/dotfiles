@@ -12,3 +12,6 @@ exec swaylock --image $wallpaper --grace 0
 
 # autotiling[AUR] (utility to automatically split on the longest edge)
 exec autotiling
+
+# autorun keepassxc
+exec keepassxc

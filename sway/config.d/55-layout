@@ -4,3 +4,7 @@ default_border pixel 0
 
 for_window [app_id="firefox"] border none
 for_window [title="KeePassXC(.*)Browser"] floating enable
+
+set $wskpxc KPXC
+assign [title="^(.*)KeePassXC$"] $wskpxc
+bindsym $mod+p workspace $wskpxc
