@@ -4,6 +4,7 @@ default_border pixel 0
 
 for_window [app_id="firefox"] border none
 for_window [title="KeePassXC(.*)Browser"] floating enable
+for_window [app_id="pavucontrol"] floating enable, sticky enable, resize set width 550px height 200px, move position cursor, move down 120
 
 set $wskpxc KPXC
 assign [title="^(.*)KeePassXC$"] $wskpxc
