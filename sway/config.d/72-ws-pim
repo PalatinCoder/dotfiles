@@ -1,0 +1,7 @@
+set $wspim PIM
+bindsym $mod+m workspace $wspim
+
+assign [title="gomuks"] $wspim
+for_window [title="^imv(.*)gomuks(.*)$"] floating enable
+
+assign [title="mutt"] $wspim
