@@ -13,7 +13,7 @@ set $right l
 set $term alacritty
 
 # Your preferred application launcher
-set $menu wofi --show drun
+set $menu wofi --show drun --prompt=App
 
 # Wallpaper
 set $wallpaper $(xdg-user-dir PICTURES)/Wallpaper/active
