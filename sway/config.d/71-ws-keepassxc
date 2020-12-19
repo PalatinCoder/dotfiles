@@ -1,0 +1,6 @@
+set $wskpxc KPXC
+assign [title="^(.*)KeePassXC$"] $wskpxc
+bindsym $mod+p workspace $wskpxc
+
+# autorun keepassxc
+exec keepassxc
