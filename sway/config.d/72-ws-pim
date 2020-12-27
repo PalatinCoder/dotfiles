@@ -1,7 +1,9 @@
 set $wspim PIM
 bindsym $mod+m workspace $wspim
 
-assign [title="gomuks"] $wspim
+for_window [title="gomuks"] move container to workspace $wspim; layout tabbed
+for_window [title="mutt"]   move container to workspace $wspim; layout tabbed
+
+# let image viewer windows opened from gomuks float above it
 for_window [title="^imv(.*)gomuks(.*)$"] floating enable
 
-assign [title="mutt"] $wspim
