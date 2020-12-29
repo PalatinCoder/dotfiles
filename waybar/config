@@ -3,23 +3,16 @@
 	"position": "top",
 	"modules-left": [
 		"sway/workspaces",
-		"custom/chevron-left",
-		"idle_inhibitor",
-		"custom/chevron-left",
 		"sway/mode"
 	],
 	"modules-center": [
-		"custom/chevron-right",
-		"sway/window",
-		"custom/chevron-left",
+		"sway/window"
 	],
 	"modules-right": [
-		"custom/chevron-right",
 		"pulseaudio",
-		"custom/chevron-right",
 		"battery",
-		"custom/chevron-right",
 		"clock",
+		"idle_inhibitor",
 	],
 	"sway/workspaces": {
 		"disable-scroll": true,
