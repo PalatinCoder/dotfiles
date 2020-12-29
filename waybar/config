@@ -1,74 +1,74 @@
 {
-	"layer": "top",
-	"position": "top",
-	"modules-left": [
-		"sway/workspaces",
-		"sway/mode"
-	],
-	"modules-center": [
-		"sway/window"
-	],
-	"modules-right": [
+    "layer": "top",
+    "position": "top",
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode"
+    ],
+    "modules-center": [
+        "sway/window"
+    ],
+    "modules-right": [
         "custom/radio",
-		"pulseaudio",
-		"battery",
-		"clock",
-		"idle_inhibitor",
-	],
-	"sway/workspaces": {
-		"disable-scroll": true,
-		"format": "{name}"
-	},
-	"clock": {
-		"format": " {:%x %H:%M}",
-		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-	},
-	"idle_inhibitor": {
-		"format": "{icon}",
-		"format-icons": {
-		    "activated": "",
-		    "deactivated": ""
-		}
-	},
-	"pulseaudio": {
-		"format": "{icon} {volume}%",
-		"format-bluetooth": " {icon} {volume}% ",
-		"format-bluetooth-muted": "{icon}  ",
-		"format-muted": "",
-		"format-icons": {
-			"headphone": "",
-			"hands-free": "",
-			"headset": "",
-			"phone": "",
-			"portable": "",
-			"car": "",
-			"default": ["", "", ""]
-		},
-		"on-click": "pavucontrol"
-	},
-	"battery": {
-		"states": {
-			"good": 95,
-			"warning": 30,
-			"critical": 15
-		},
-		"format": "{icon} {capacity}%",
-		"format-icons": [
-			"",
-			"",
-			"",
-			"",
-			""
-		]
-	},
-	"custom/chevron-left": {
-		"format": "",
-		"tooltip": false
-	},
-	"custom/chevron-right": {
-		"format": "",
-		"tooltip": false
-	},
+        "pulseaudio",
+        "battery",
+        "clock",
+        "idle_inhibitor",
+    ],
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "format": "{name}"
+    },
+    "clock": {
+        "format": " {:%x %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": " {icon} {volume}% ",
+        "format-bluetooth-muted": "{icon}  ",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "custom/chevron-left": {
+        "format": "",
+        "tooltip": false
+    },
+    "custom/chevron-right": {
+        "format": "",
+        "tooltip": false
+    },
     "custom/radio": {
         "format": " {}",
         "exec": "mpc current",
