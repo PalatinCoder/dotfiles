@@ -1,5 +1,5 @@
 #entry {
-border-radius: 0;
+border-radius: 0px;
 padding: 2px 3px 2px 3px;
 }
 
@@ -13,8 +13,7 @@ border-radius: 0px;
 }
 
 #input {
-text-align: center;
-padding: 3 5 3 5;
+padding: 3px 5px 3px 5px;
 border-radius: 0px;
 }
 
@@ -30,7 +29,7 @@ background-color: transparent;
 
 #scroll {
 margin-top: 10px;
-background-color: none;
+background-color: transparent;
 border: none;
 }
 
@@ -41,6 +40,6 @@ background-color: transparent;
 }
 
 #img {
-  background-color: transparent;
-  padding: 5px;
+background-color: transparent;
+padding: 5px;
 }
