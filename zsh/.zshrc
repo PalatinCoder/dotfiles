@@ -106,6 +106,7 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
 fi
 
 HISTFILE=${XDG_DATA_HOME:-$HOME/.local/share}/.zsh_history
+ZSH_COMPDUMP="${ZSH_CACHE_DIR}/.zcompdump-${(%):-%m}-${ZSH_VERSION}"
 
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
