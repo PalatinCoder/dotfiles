@@ -1636,6 +1636,8 @@
   typeset -g POWERLEVEL9K_DOCKER_SHOW_ON_COMMAND="docker|docker-compose"
 
   function prompt_docker() {
+      [ -f ~/.docker/config.json ] || return
+
       PROMPT_DOCKER_CURRENT_CONTEXT=$(jq -r .currentContext ~/.docker/config.json)
       if [ "$PROMPT_DOCKER_CURRENT_CONTEXT" != "null" ]; then
           p10k segment -b 8 -f 3 -i '' -t $PROMPT_DOCKER_CURRENT_CONTEXT
