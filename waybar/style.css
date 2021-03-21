@@ -1,7 +1,7 @@
 /* solarized dark colors */
 @define-color   base03  #002b36;
 @define-color   base02  #073642;
-@define-color   base02  #586e75;
+@define-color   base01  #586e75;
 @define-color   base00  #657b83;
 @define-color   base0   #839496;
 @define-color   base1   #93a1a1;
@@ -18,7 +18,9 @@
 
 * {
     font-size: 11pt;
-    font-family: sans-serif;
+    font-family: "Noto Sans", "Font Awesome 5 Free";
+    border: none;
+    border-radius: 0;
 }
 
 #custom-chevron-right,
