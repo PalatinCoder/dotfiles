@@ -1,6 +1,7 @@
 {
     "layer": "top",
     "position": "top",
+    "margin": "10 10 0 10",
     "modules-left": [
         "sway/workspaces",
         "sway/mode"

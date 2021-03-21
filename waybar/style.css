@@ -29,8 +29,8 @@
 }
 
 window#waybar {
-    background: transparent;
-    color: @base03;
+    background: alpha(@base03, 0.85);
+    color: @base0;
 }
 
 #window,
@@ -40,21 +40,20 @@ window#waybar {
 
 #workspaces button {
     padding: 0 2px;
-    color: @base03;
-    border-bottom: 2px solid transparent;
+    margin-right: 5px;
+    border-top: 2px solid @base02;
 }
 #workspaces button.focused {
-    border-bottom: 2px solid @blue;
+    background: @base02;
+    border-top: 2px solid @blue;
 }
 
 #mode {
     color: @red;
 }
 
-#window,
 #clock,
 #idle_inhibitor,
-#workspaces,
 #pulseaudio,
 #battery,
 #mode {
