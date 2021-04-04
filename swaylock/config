@@ -1,4 +1,5 @@
 ignore-empty-password
+daemonize
 grace=300
 clock
 timestr=%H:%M
