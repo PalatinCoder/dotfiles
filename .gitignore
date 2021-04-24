@@ -1,3 +1,4 @@
 dconf/
 pulse/
 systemd/user/*.target.wants
+autostart/
