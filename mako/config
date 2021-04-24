@@ -1,0 +1,17 @@
+font=Noto Sans 10
+default-timeout=30000
+
+format=<i>%a</i>\n<b>%s</b>\n%b
+[grouped]
+format=<i>%a (%g)</i>\n<b>%s</b>\n%b
+
+# solarized dark
+background-color=#002b36
+text-color=#839496
+progress-color=over #586e75
+[urgency=low]
+border-color=#073642
+[urgency=normal]
+border-color=#268bd2
+[urgency=high]
+border-color=#dc322f
