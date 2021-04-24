@@ -1,4 +1,0 @@
-### Output configuration
-#
-# Wallpaper
-output * bg $wallpaper fill

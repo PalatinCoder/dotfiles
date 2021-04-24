@@ -1,0 +1,11 @@
+[Unit]
+Description=sway background image
+Documentation=man:swaybg(1)
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/swaybg -o * -i /home/jan/Bilder/Wallpaper/active -m fill
+
+[Install]
+WantedBy=sway-session.target
