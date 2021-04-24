@@ -121,6 +121,17 @@ export MANPAGER="vim -MR +MANPAGER -"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias please=sudo
 alias cmon='sudo $(fc -ln -1)'
+alias journalctl='journalctl -e'
+
+alias jctl='journalctl -e'
+alias jctlu='journalctl -eu'
+alias jctlt='journalctl -et'
+alias ujctl='journalctl --user -e'
+alias ujctlu='journalctl --user -eu'
+alias sctl='systemctl'
+alias usctl='systemctl --user'
+
+alias reboot-windows='systemctl reboot --boot-loader-entry=auto-windows'
 
 # End of config, now load oh-my-zsh and powerlevel10
 source $ZSH/oh-my-zsh.sh
