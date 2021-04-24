@@ -107,6 +107,9 @@ alias wget="wget --hsts-file=${XDG_CACHE_HOME:-$HOME/.cache}/wget-hsts"
 export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
 export MPD_HOST="${XDG_RUNTIME_DIR}/mpd/socket"
 
+# read man pages in vim
+export MANPAGER="vim -MR +MANPAGER -"
+
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
