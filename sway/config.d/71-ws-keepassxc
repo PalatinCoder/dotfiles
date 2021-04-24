@@ -1,6 +1,6 @@
-set $wskpxc KPXC
-assign [title="^(.*)KeePassXC$"] $wskpxc
+set $wskpxc 
 bindsym $mod+p workspace $wskpxc
+workspace $wskpxc output eDP-1
 
-# autorun keepassxc
-exec keepassxc
+# match title, not appid, so the browser dialog popups stay on their workspace
+assign [title="^(.*)KeePassXC$"] $wskpxc
