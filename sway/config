@@ -6,6 +6,3 @@ xwayland disable
 # include all the things
 include ~/.config/sway/config.d/*
 include /etc/sway/config.d/*
-
-# lock the screen when starting sway (usefull when using autlogin on the tty)
-exec swaylock --image $wallpaper --grace 0
