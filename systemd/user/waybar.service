@@ -1,0 +1,11 @@
+[Unit]
+Description=wayland bar for sway
+Documentation=man:waybar(5)
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/waybar
+
+[Install]
+WantedBy=sway-session.target
