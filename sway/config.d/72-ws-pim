@@ -1,5 +1,7 @@
-set $wspim PIM
+set $wspim 
 bindsym $mod+m workspace $wspim
+
+workspace $wspim output eDP-1
 
 for_window [title="gomuks"] move container to workspace $wspim; layout tabbed
 for_window [title="mutt"]   move container to workspace $wspim; layout tabbed
