@@ -6,3 +6,6 @@ xwayland disable
 # include all the things
 include ~/.config/sway/config.d/*
 include /etc/sway/config.d/*
+
+# start the systemd target for the background apps
+exec "systemctl --user import-environment; systemctl --user start sway-session.target"
