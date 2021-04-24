@@ -1,0 +1,9 @@
+profile docked {
+   output "Dell Inc. DELL P2219HC 4M8T8P2" mode 1920x1080 position 0,0
+   output "Dell Inc. DELL P2219HC 8YQV8P2" mode 1920x1080 position 1920,0
+   output eDP-1 mode 1920x1080 position 1920,1080 scale 1.25
+
+   exec swaymsg workspace 1, move workspace to output '"Dell Inc. DELL P2219HC 4M8T8P2"'
+   exec swaymsg workspace 2, move workspace to output '"Dell Inc. DELL P2219HC 8YQV8P2"'
+   exec swaymsg workspace 3, move workspace to output eDP-1
+}
