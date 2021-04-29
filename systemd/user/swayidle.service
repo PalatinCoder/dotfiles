@@ -1,0 +1,18 @@
+[Unit]
+Description=Idle manager
+Documentation=man:swayidle(1)
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+
+ExecStart=/usr/bin/swayidle -w \
+         timeout 60 'swaylock --screenshots --grace 300' \
+         timeout 600 'swaymsg "output * dpms off"' \
+         resume 'swaymsg "output * dpms on"' \
+         before-sleep 'swaylock --screenshots --grace 0' \
+         lock 'swaylock --screenshots --grace 0' \
+         idlehint 60
+
+[Install]
+WantedBy=sway-session.target
